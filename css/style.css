@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+/*Colores*/
+:root{
+    --color__principal: #3a0781; 
+    --color__secundario: #711159; 
+    --color__terciario: #91931c; 
+    /*colores estandar*/
+    --color__blanco: white; 
+    --color__negro: black; 
+}
+
+nav{
+    background-color: var(--color__secundario);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: var(--color__blanco);
+    font-size: 35px; 
+    line-height: 80px;
+    padding: 0 20px;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 7px;
+}
+
+nav ul li a{
+    color: var(--color__blanco); 
+    font-size: 35px;
+    font-family: 'Cute Font';
+    font-style: normal;
+    font-weight: 400;
+}
+
+a:hover{
+    background-color: var(--color__terciario);
+    transition: .1s;
+}
