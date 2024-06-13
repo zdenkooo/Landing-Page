@@ -6,16 +6,24 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    list-style: none;
 
 }
+
+body{
+    font-family: 'Cute Font';
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
 /*Colores*/
 :root{
     --color__principal: #3a0781; 
     --color__secundario: #711159; 
     --color__terciario: #91931c; 
     /*colores estandar*/
-    --color__blanco: white; 
-    --color__negro: black; 
+    --color__blanco: #ffffff; 
+    --color__negro: #000000; 
 }
 
 nav{
@@ -57,3 +65,96 @@ a:hover{
     background-color: var(--color__terciario);
     transition: .1s;
 }
+
+.checkbtn{
+    font-size: 30px;
+    color: var(--color__blanco);
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* . para clase y # para identificador*/
+
+#check{
+    display: none;
+}
+
+@media (max-width: 752px){
+    label.logo{
+        font-size: 15px;
+        margin-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--color__principal);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 19px;
+    }
+    a:hover{
+        background: var(--color__terciario);
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/* Sección de imagen y bienvenida a la página*/
+
+.hero{
+    background: linear-gradient(to bottom, #3a0781b5, #91931c00), url("https://media-cdn.tripadvisor.com/media/photo-c/1280x250/03/ec/07/79/shibuya-center-town.jpg");
+    background-size: cover; 
+    height: 50vh;
+    text-align: center;
+    border-radius: 0px 0px 90px 0px;
+    
+}
+
+h2{
+    color: var(--color__blanco);
+    font-size: 80px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+h3{
+    color: var(--color__blanco);
+    font-size: 35px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+
