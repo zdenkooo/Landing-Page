@@ -16,6 +16,7 @@ body{
     font-family: 'Cute Font';
     font-style: normal;
     font-optical-sizing: auto;
+    background-color: var(--color__principal);
 }
 
 /*Colores*/
@@ -101,7 +102,7 @@ a:hover{
         display: block;
     }
 
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -130,6 +131,13 @@ a:hover{
     }
 }
 
+/* Carrusel Bootstrap*/
+.carousel-inner img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+
+}
 /* Sección de imagen y bienvenida a la página*/
 
 .hero{
@@ -161,12 +169,6 @@ h3{
     z-index: 1;
 }
 
-
-body {
-    background-color: var(--color__principal);
-    
-}
-
 :root {
     --color-primario: rgb(84, 110, 118);  
     --color-secundario: rgb(13, 6, 38);    
@@ -180,6 +182,39 @@ h1 {
     font-size: 50px;
 }
 
+/* Contenido Principal*/
+
+.contenedor{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contenido__principal{
+    width: 80%;
+    margin: 3% auto;
+}
+
+.contenido__principal img{
+    max-width: 450px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.texto__caja{
+    color: var(--color__negro);
+    font-size: 27px;
+    justify-content: center;
+}
+
+@media (max-width: 720px){
+    .contenido__principal img{
+        max-width: 100%;
+    }
+}
+
 /*Padre*/
 .flex_container{
     background-color: var(--color__secundario);
@@ -189,6 +224,7 @@ h1 {
     flex-wrap: wrap;
     width: 70%;
     margin: 0 auto;
+    margin-bottom: 5%;
     justify-content: center;
     padding: 30px;
     -webkit-box-shadow: 10px 16px 22px 21px rgba(0,0,0,0.75);
@@ -305,12 +341,6 @@ h1 {
     .footer .contenido__footer{
         color: var(--color__blanco);
     }
-
     
-
     
 }
-
-
-
-
