@@ -89,7 +89,7 @@ a:hover{
     display: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 925px){
     label.logo{
         font-size: 50px;
         margin-left: 50px;
@@ -97,10 +97,11 @@ a:hover{
 
     nav ul li a{
         font-size: 16px;
+        
     }
 }
 
-@media(max-width:768px){
+@media(max-width:925px){
     .checkbtn{
         display: block;
         size: 400px;
