@@ -91,7 +91,7 @@ a:hover{
 
 @media (max-width: 925px){
     label.logo{
-        font-size: 20px;
+        font-size: 30px;
         margin-left: 50px;
     }
 
@@ -549,7 +549,7 @@ iframe{
 }
 
 .texto__inicio__principal h2{
-    font-size: 130px;
+    font-size: 100px;
     color: var(--color__blanco);
     font-family: Cinzel;
     font-weight: bold;
